@@ -26,9 +26,7 @@
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       @include bg-image ('../images/baner-p@2x.jpg', cover, center, top);
     }
-
   }
-
 }
 
 .header{
@@ -42,6 +40,72 @@
     height: 970px;
   }
 
+  &__title{
+    font-family: $main-title-font;
+    color: $main-text-color-light;
+    width: auto;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 auto 20px;
+
+    @media (min-width: 768px) {
+      font-size: 3.214rem;
+    }
+  
+    @media (min-width: 1300px) {
+      width: auto;
+      margin: 0 0 40px;
+      text-align: start;
+      font-size: 4.643rem;
+    }
+  }
+
+  &__text{
+    width: 280px;
+    height: 56px;
+    font-family: $main-text-font;
+    font-weight: 400;
+    font-size: 1.143rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: $main-text-color-light;
+    
+    &--div{
+      display: inline-block;
+      margin: 0 auto 60px;
+      padding: 10px;
+      width: max-content;
+      background: rgba($title-text-color-dark, 0.6);
+
+      @media (min-width: 768px){
+        margin: 0 auto 20px;
+      }
+
+      @media (min-width: 1300px){
+        margin: 0;
+        padding: 10px 10px 10px 30px;
+      }
+    }
+    
+    &--orang-span{
+      color: $main-accent-color;
+    }
+
+    @media (min-width: 768px) {
+      width: 440px;
+      height: 64px;
+      
+      font-size: 1.928rem;
+      line-height: 2.286rem;
+    }
+  
+    @media (min-width: 1300px) {
+      font-size: 1.785rem;
+      margin: 0;
+      border-left: solid 2px $main-accent-color;
+    }
+  }
 }
 
 .nav{
@@ -51,10 +115,13 @@
   padding: 10px 0 0 0;
   margin: 0 0 270px;
 
+  @media (min-width: 768px){
+    margin: 0 0 300px;
+  }
+
   @media (min-width: 1300px){
     margin: 0 0 570px;
   }
-
 }
 
 .none-list{
@@ -65,7 +132,6 @@
     justify-content: center;
     color: $main-text-color-light;
   }
-
 }
 
 .none-list__container{
@@ -73,12 +139,11 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  
-  padding: 0;
+  padding: 0 30px 0 0;
 }
 
 .container-list-none__item{
-  padding: 5px 10px;
+  padding: 5px 15px;
   font-family: $main-text-font;
   font-size: 18px;
   font-weight: 800;
@@ -94,13 +159,9 @@
     transition: 0.2s linear;
   }
     
-  &:hover{
-    color: $main-accent-color;
-
-    &::after {
-      background: $main-accent-color; 
-    } 
-  }
+  &:hover::after {
+    background: $main-accent-color; 
+  } 
 }
 
 .container-list-none--link{
@@ -109,6 +170,7 @@
 }
 
 .none-list__button{
+  align-self: center;
   height: 40px;
   border: none;
   border-radius: 5px;
@@ -127,55 +189,15 @@
   @media (min-width: 1300px){
     display: none;
   }
-
 }
 
-.nav_item--burger-link{
+.nav__item--burger-link{
   width: 28px;
   height: 19px;
   @extend %link;
   @include bg-image ('../images/button-burger.png', cover, center, top);
-
-
 }
 
-.header__title{
-  font-family: $main-title-font;
-  color: $main-text-color-light;
-  width: 280px;
-  font-weight: 800;
-  font-size: 2.5rem;
-  text-align: center;
-  margin: 0 auto 20px;
-
-  @media (min-width: 1300px) {
-    margin: 0 0 40px;
-    text-align: start;
-
-  }
-}
-
-.header__text{
-  width: 280px;
-  height: 56px;
-  font-family: $main-text-font;
-  font-weight: 700;
-  font-size: 1.143rem;
-  line-height: 1.875rem;
-  text-align: center;
-  color: $main-text-color-light;
-  background: rgba($title-text-color-dark, 0.6);
-  margin: 0 auto 60px;
-  
-
-  &--orang-span{
-    color: $main-accent-color;
-  }
-
-  @media (min-width: 1300px) {
-    margin: 0;
-  }
-}
 .header__button{
   @extend %button;
   background-color: transparent;
@@ -186,26 +208,26 @@
 
   @media (min-width: 1300px){
     display: none;
-
   }
-
 }
 
-// БУРГЕР БУРГЕР БУРГЕР БУРГЕР БУРГЕР БУРГЕР БУРГЕР
+// БУРГЕР БУРГЕР БУРГЕР БУРГЕР БУРГЕР БУРГЕР БУРГЕР БУРГЕР БУРГЕР
 
 .burger-menu{
-
+  visibility: hidden;
   background-color: $secondary-accent-color;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+
 }
 
 .menu__box-header-burger {
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
 }
 
 .menu__box{
@@ -248,5 +270,4 @@
   background-image: url(../images/button-burger-close.png);
   width: 22px;
   height: 22px;
-
 }
