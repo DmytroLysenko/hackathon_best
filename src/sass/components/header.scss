@@ -1,0 +1,13 @@
+.baner{
+  background-color: aqua;
+  background: url(../images/baner-m.jpg) no-repeat center top;
+  margin: 0 auto;
+  width: 320px;
+  height: 558px;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background: url(../images/baner-m@2x.jpg) no-repeat center top;
+  }
+
+}
+
