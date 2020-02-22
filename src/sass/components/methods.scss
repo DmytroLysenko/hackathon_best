@@ -6,6 +6,13 @@
     display: flex;
     flex-direction: column;
 }
+.methods__heading {
+    margin: auto;
+    position: relative;
+}
+.heading-svg {
+    position: absolute;
+}
 .methods__title {
     font-family: $main-title-font;
     font-size: 1.42rem;
@@ -19,10 +26,28 @@
     margin: 0 auto;
 }
 
-
 .methods__description {
     font-family: $main-text-font;
     font-size: $main-font-sise;
     color: $main-text-color-dark;
     text-align: left;
 }
+.methods__link {
+    background-color: #343434;
+    width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+}
+.methods__link--it {
+
+}
+.methods__link--support" {
+
+}
+.methods__link--skills" {
+
+}
+
+
+
+
