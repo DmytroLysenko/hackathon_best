@@ -8,15 +8,29 @@
       Як зазначає більшість дослідників, ці тенденції будуть прискорюватися
       незалежно від шкільної освіти.
     </p>
-    <img
-      class="education_banner_img"
-      srcset="
-        ../images/education_banner_mob.jpg,
-        ../images/education_banner_mob@2x.jpg 2x
-      "
-      sizes="280px"
-      src="../images/education_banner_mob.jpg"
-      alt="education banner"
-    />
+    <picture class="education_banner_img">
+      <source
+        media="(max-width: 787px)"
+        srcset="
+          ../images/education_banner_mob.jpg,
+          ../images/education_banner_mob@2x.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 788px)"
+        srcset="
+          ../images/education_banner_tab.jpg,
+          ../images/education_banner_tab@2x.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 1300px)"
+        srcset="
+          ../images/education_banner_desc.jpg,
+          ../images/education_banner_desc@2x.jpg 2x
+        "
+      />
+      <img src="../images/education_banner_tab.jpg" alt="education banner" />
+    </picture>
   </div>
 </section>
