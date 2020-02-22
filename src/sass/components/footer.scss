@@ -7,4 +7,138 @@
     width: 100px;
     height: 26px;
   }
+
+  &__up {
+    font-family: $main-text-font;
+    font-size: 1rem;
+    line-height: 1.79;
+    font-weight: 400;
+    color: #969aa8;
+    background-color: #1c1c1c;
+    padding: 38px 45px;
+  }
+
+  &__contacts-1 {
+    margin: 12px 0 26px 0;
+  }
+
+  &__contacts-2 {
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    @extend %button;
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 0px rgba(252, 174, 38, 0.4);
+    background-color: $main-accent-color;
+    font-family: $main-title-font;
+    font-size: 1.14rem;
+    font-weight: 700;
+    line-height: 1;
+    color: $main-text-color-light;
+
+    &:hover {
+      color: $title-text-color-dark;
+    }
+  }
+
+  &__social {
+    margin-top: 34px;
+    width: 146px;
+  }
+
+  &__social-list {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__social-item {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      box-shadow: 0px 0px 3px 0px rgba(#fff,0.7);
+    }
+
+    &:hover .footer__social-link {
+      filter: invert(0%);
+    }
+
+    &:nth-of-type(1) {
+      background-color: #3d99e3;
+    }
+
+    &:nth-of-type(1) .footer__social-link {
+      background-image: url(../../images/telegram.png);
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../../images/telegram@2x.png);
+      }
+    }
+
+    &:nth-of-type(2) {
+      background-color: #2e4d72;
+    }
+
+    &:nth-of-type(2) .footer__social-link {
+      background-image: url(../../images/facebook.png);
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../../images/facebook@2x.png);
+      }
+    }
+
+    &:nth-of-type(3) {
+      background-color: #ba1f2e;
+    }
+
+    &:nth-of-type(3) .footer__social-link {
+      background-image: url(../../images/youtube.png);
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../../images/youtube@2x.png);
+      }
+    }
+  }
+
+  &__social-link {
+    @extend %link;
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(100%);
+  }
+
+  &__down {
+    padding: 20px 45px;
+    background-color: #0d0d0d;
+  }
+
+  &__conditions {
+    @extend %list;
+  }
+
+  &__conditions-link {
+    @extend %link;
+    font-family: $main-title-font;
+    font-size: 0.857rem;
+    font-weight: 600;
+    line-height: 2.08;
+    color: #626263;
+
+    &:hover {
+      color: #969aa8;
+    }
+  }
+
 }
