@@ -15,7 +15,12 @@
     font-weight: 400;
     color: #969aa8;
     background-color: #1c1c1c;
-    padding: 38px 45px;
+    padding: 38px 0;
+  }
+
+  &__down {
+    padding: 20px 0;
+    background-color: #0d0d0d;
   }
 
   &__contacts-1 {
@@ -119,11 +124,6 @@
     filter: invert(100%);
   }
 
-  &__down {
-    padding: 20px 45px;
-    background-color: #0d0d0d;
-  }
-
   &__conditions {
     @extend %list;
   }
@@ -141,4 +141,7 @@
     }
   }
 
+  .container {
+    padding: 0 45px;
+  }
 }
