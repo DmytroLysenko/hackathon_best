@@ -1,0 +1,28 @@
+.list {
+    list-style: none;
+    padding: 0;
+}
+.methods__list {
+    display: flex;
+    flex-direction: column;
+}
+.methods__title {
+    font-family: $main-title-font;
+    font-size: 1.42rem;
+    text-transform: uppercase;
+    color: $title-text-color-dark;
+    text-align: center;
+}
+.methods__item {
+    width: 192px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+
+.methods__description {
+    font-family: $main-text-font;
+    font-size: $main-font-sise;
+    color: $main-text-color-dark;
+    text-align: left;
+}
