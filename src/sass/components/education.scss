@@ -40,8 +40,10 @@ img {
       }
 
       @media (min-width: 768px) {
+        width: 28px;
+        height: 28px;
         margin-bottom: 0;
-        transform: translateX(-200%);
+        transform: translateX(-150%);
       }
     }
 
@@ -77,6 +79,7 @@ img {
 
     @media (min-width: 1320px) {
       width: 650px;
+      margin: 0;
     }
   }
 
@@ -123,11 +126,17 @@ img {
       font-size: 1.79rem;
     }
 
-    &--accent {
+    &--accent-1 {
       display: block;
 
       @media (min-width: 768px) {
         display: inline;
+      }
+    }
+
+    &--accent-2 {
+      @media (min-width: 1320px) {
+        display: block;
       }
     }
 
