@@ -1,0 +1,10 @@
+.footer {
+  &__link-logo {
+    @extend %link;
+  }
+
+  &__logo {
+    width: 100px;
+    height: 26px;
+  }
+}
