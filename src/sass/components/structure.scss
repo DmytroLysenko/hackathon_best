@@ -1,17 +1,38 @@
 .structure__heading {
     display: flex;
-    flex-direction: ;
     flex-direction: row-reverse;
     justify-content: flex-start;;
 }
 
-
 .structure-block {
-    border: none;
-    border-radius: 10px 20px 0 ;
+
+
+}
+.structure-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ;
+    border-radius: 0 30px 0 30px;
     margin: auto;
     width: 281px;
     height: 260px;
-    background-color: #2233ee;
     margin-bottom: 16px;
+}
+
+      
+      
+
+
+.structure-block--tech {
+    background-color: #f6ead0;
+}
+.structure-block--soft {
+    background-color: #fbdcd2;
+}
+.structure-block--english {
+    background-color: #e2d8f5;
+}
+.structure-block--hakaton {
+    background-color: #c8eae8;
 }
