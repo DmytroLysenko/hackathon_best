@@ -1,31 +1,29 @@
 .section__list {
     @extend %list;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   
   .section__title {
-    font-size: 30px;
-    color: $title-add-color;
+    font-size: 1.4286rem;
+    color: $title-text-color-dark;
     font-weight: 700;
-    text-align: center;
+    // text-align: center;
     text-transform: uppercase;
-    margin-bottom: 106px;
+    margin-bottom: 38px;
   
-    &--mbs1{
-      margin-bottom: 106px;
     }
   
     .services__item {
         width: 380px;
       }
-      
-         
+    
       
       .services__item-title {
-        margin-bottom: 20px;
-        color: $title-add-color;
+        margin-bottom: 28px;
+        color: $title-text-color-dark;
         text-transform: uppercase;
       }
       
@@ -35,10 +33,11 @@
         color: $services-Shortdescr-color;
         font-family: $services-Shortdescr-font;
         font-weight: $base-font-weight;
+        margin-bottom: 40px;
       }
       
       .services--mb {
-        margin-bottom: 100px;
+        margin-bottom: 54px;
       }
     }
     
