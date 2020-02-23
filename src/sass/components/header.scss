@@ -8,10 +8,11 @@
   margin: 0 auto;
   padding-bottom: 50px;
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    @include bg-image ('../images/baner-m@2x.jpg', cover, center, top);
+  @media (min-width: 320px) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      @include bg-image ('../images/baner-m@2x.jpg', cover, center, top);
+    }
   }
-
 
   @media (min-width: 768px) {
     @include bg-image ('../images/baner-t.jpg', cover, center, top);
@@ -299,6 +300,7 @@
   background: transparent;
   border: none;
   background-image: url(../images/button-burger-close.png);
+  background-repeat: no-repeat;
   width: 22px;
   height: 22px;
 }
