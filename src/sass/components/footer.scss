@@ -11,10 +11,10 @@
     box-shadow: 0px 7px 12px 0px #333333;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../../images/footer--up.png);
+    background-image: url(../images/footer--up.png);
 
     @media (min-resolusion: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../../images/footer--up@2x.png);
+      background-image: url(../images/footer--up@2x.png);
     }
 
     &-link {
@@ -172,28 +172,28 @@
 
     &:nth-of-type(1) {
       background-color: #3d99e3;
-      background-image: url(../../images/telegram.png);
+      background-image: url(../images/telegram.png);
 
       @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../../images/telegram@2x.png);
+        background-image: url(../images/telegram@2x.png);
       }
     }
 
     &:nth-of-type(2) {
       background-color: #2e4d72;
-      background-image: url(../../images/facebook.png);
+      background-image: url(../images/facebook.png);
 
       @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../../images/facebook@2x.png);
+        background-image: url(../images/facebook@2x.png);
       }
     }
 
     &:nth-of-type(3) {
       background-color: #ba1f2e;
-      background-image: url(../../images/youtube.png);
+      background-image: url(../images/youtube.png);
 
       @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../../images/youtube@2x.png);
+        background-image: url(../images/youtube@2x.png);
       }
     }
   }
