@@ -54,11 +54,6 @@
   }
 
   &__up {
-    font-family: $main-text-font;
-    font-size: 1rem;
-    line-height: 1.79;
-    font-weight: 400;
-    color: #969aa8;
     background-color: #1c1c1c;
     padding: 38px 0;
   }
@@ -81,6 +76,13 @@
   }
 
   &__contacts-1 {
+    display: block;
+    text-decoration: none;
+    font-family: $main-text-font;
+    font-size: 1rem;
+    line-height: 1.79;
+    font-weight: 400;
+    color: #969aa8;
     margin-bottom: 26px;
 
     @media (min-width: 768px) {
@@ -90,6 +92,16 @@
 
   &__contacts-2 {
     margin-bottom: 30px;
+
+    &-link {
+      display: block;
+      text-decoration: none;
+      font-family: $main-text-font;
+      font-size: 1rem;
+      line-height: 1.79;
+      font-weight: 400;
+      color: #969aa8;
+    }
 
     @media (min-width: 768px) {
       margin-bottom: 0;
@@ -152,6 +164,7 @@
     align-items: center;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto 18px;
 
     &:hover {
       box-shadow: 0px 0px 3px 0px rgba(#fff, 0.7);
@@ -163,7 +176,6 @@
 
       @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../../images/telegram@2x.png);
-        background-size: contain;
       }
     }
 
@@ -173,7 +185,6 @@
 
       @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../../images/facebook@2x.png);
-        background-size: contain;
       }
     }
 
@@ -183,7 +194,6 @@
 
       @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../../images/youtube@2x.png);
-        background-size: contain;
       }
     }
   }
