@@ -35,7 +35,7 @@ img {
       background-size: contain;
       background-image: url(../../images/quote.png);
 
-      @media (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../../images/quote@2x.png);
       }
 
