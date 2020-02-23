@@ -1,4 +1,48 @@
 .footer {
+  position: relative;
+
+  &--up {
+    display: none;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #333333;
+    box-shadow: 0px 7px 12px 0px #333333;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../images/footer--up.png);
+
+    @media (min-resolusion: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../../images/footer--up@2x.png);
+    }
+
+    &-link {
+      @extend %link;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1319px) {
+      display: block;
+      top: 0;
+      right: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: 1320px) {
+      display: block;
+      bottom: 0;
+      right: 0;
+      transform: translate(-50%, -100%);
+    }
+
+    &:hover {
+      background-color: $main-accent-color;
+    }
+  }
+
   &__link-logo {
     @extend %link;
   }
@@ -6,6 +50,7 @@
   &__logo {
     width: 100px;
     height: 26px;
+    margin-bottom: 12px;
   }
 
   &__up {
@@ -23,12 +68,41 @@
     background-color: #0d0d0d;
   }
 
+  &__up--transform {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+    }
+
+    @media (min-width: 1320px) {
+      width: 1152px;
+    }
+  }
+
   &__contacts-1 {
-    margin: 12px 0 26px 0;
+    margin-bottom: 26px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 
   &__contacts-2 {
     margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__action {
+    @media (min-width: 1320px) {
+      width: 518px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__btn {
@@ -48,11 +122,19 @@
     &:hover {
       color: $title-text-color-dark;
     }
+
+    @media (min-width: 1320px) {
+      width: 192px;
+    }
   }
 
   &__social {
     margin-top: 34px;
     width: 146px;
+
+    @media (min-width: 1320px) {
+      margin-top: 0;
+    }
   }
 
   &__social-list {
@@ -68,64 +150,63 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
 
     &:hover {
-      box-shadow: 0px 0px 3px 0px rgba(#fff,0.7);
-    }
-
-    &:hover .footer__social-link {
-      filter: invert(0%);
+      box-shadow: 0px 0px 3px 0px rgba(#fff, 0.7);
     }
 
     &:nth-of-type(1) {
       background-color: #3d99e3;
-    }
-
-    &:nth-of-type(1) .footer__social-link {
       background-image: url(../../images/telegram.png);
 
       @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../../images/telegram@2x.png);
+        background-size: contain;
       }
     }
 
     &:nth-of-type(2) {
       background-color: #2e4d72;
-    }
-
-    &:nth-of-type(2) .footer__social-link {
       background-image: url(../../images/facebook.png);
 
       @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../../images/facebook@2x.png);
+        background-size: contain;
       }
     }
 
     &:nth-of-type(3) {
       background-color: #ba1f2e;
-    }
-
-    &:nth-of-type(3) .footer__social-link {
       background-image: url(../../images/youtube.png);
 
       @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../../images/youtube@2x.png);
+        background-size: contain;
       }
     }
   }
 
   &__social-link {
     @extend %link;
-    width: 50%;
-    height: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: invert(100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
   }
 
   &__conditions {
     @extend %list;
+
+    @media (min-width: 768px) {
+      width: 576px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 1320px) {
+      width: 634px;
+    }
   }
 
   &__conditions-link {
@@ -143,5 +224,13 @@
 
   .container {
     padding: 0 45px;
+
+    @media (min-width: 768px) {
+      padding: 0 35px;
+    }
+
+    @media (min-width: 1320px) {
+      padding: 0;
+    }
   }
 }
