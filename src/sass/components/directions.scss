@@ -1,14 +1,11 @@
 .directions {
   padding: 25px 0;
-  
 
-  @media (min-width: 767px) and (max-width: 1319px) {
+  @media (min-width: 768px) and (max-width: 1319px) {
     padding-top: 68px 0 34 0;
-    
   }
 
   @media (min-width: 1320px) {
-    
     padding: 112px 0;
   }
 }
@@ -51,7 +48,7 @@
     padding-top: 50px;
   }
 
-  @media (min-width: 767px) and (max-width: 1319px) {
+  @media (min-width: 768px) and (max-width: 1319px) {
     width: 310px;
   }
 
@@ -65,7 +62,7 @@
     }
   }
 
-  @media (min-width: 767px) and (max-width: 1319px) {
+  @media (min-width: 768px) and (max-width: 1319px) {
     &:not(:nth-last-child(-n + 2)) {
       border-bottom: 1px dashed #f1f1f1;
     }
@@ -79,9 +76,11 @@
     @media (min-width: 1320px) {
       transform: scale(1.03, 1.03);
     }
+
     background-color: $main-accent-color;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    border-right: none;
   }
 
   &:hover .directions__item-descr {
@@ -90,8 +89,10 @@
 
   &:hover .directions__img {
     fill: $main-text-color-light;
-    width: 32px;
-    height: 32px;
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 32px;
+    }
   }
 
   &:hover .directions__item-descr_add {
